@@ -7,13 +7,16 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <fragment
+        android:tag="firstFrag"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        class="kr.co.tjoeun.fragmemnt_20200709.flagments.FirstFragment" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:tag="secondFrag"
+        class="kr.co.tjoeun.fragmemnt_20200709.flagments.SecondFragment" />
 
 </LinearLayout>
